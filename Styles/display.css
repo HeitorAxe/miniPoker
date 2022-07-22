@@ -1,0 +1,105 @@
+body
+{
+    
+    padding: 0;
+    margin: 0;
+    color: black;
+    background: radial-gradient(#021336, black);
+    background-attachment: fixed; /*edit*/
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+h1
+{
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h1 span
+{
+    font-size:1.2em;
+    color: maroon;
+}
+
+h2
+{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.flip-card
+{
+    margin: 10px;
+}
+
+.table-cards
+{
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.player-hand
+{
+    padding-top: 60px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 550px)
+{
+    .flip-card
+    {
+        font-size: 1em; 
+        width: 120px;
+        height: 210px;
+    }
+
+    .card-back
+    {
+        width: 120px;
+        height: 210px;
+    }
+
+    .card
+    {
+        width: 120px;
+        height: 210px;
+    }
+
+    span
+    {
+        font-size: 12px;
+    }
+}
+@media (max-width: 450px)
+{
+    .flip-card
+    {
+        font-size: 1em; 
+        width: 100px;
+        height: 180px;
+    }
+
+    .card-back
+    {
+        width: 100px;
+        height: 180px;
+    }
+
+    .card
+    {
+        width: 100px;
+        height: 180px;
+        font-size: 20px;
+    }
+
+
+}

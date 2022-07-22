@@ -1,0 +1,50 @@
+.flip-card
+{
+    display: grid;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+    font-size: 1.1em; 
+    width: 150px;
+    height: 240px;
+
+}
+.turned-card
+{
+    transform: rotateY(180deg);
+}
+
+.card-front
+{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* any changes made to the size of this should be made to the class .card and flip card*/
+.card-back
+{
+
+    grid-column: 1;
+    grid-row: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid 2px white;
+    border-radius: 10px;
+    width: 150px;
+    height: 240px;
+    font-size: 2.55em;
+
+    text-align: center;
+    background-color: black;
+    
+    background-image: url("Images/cardback.gif");
+    
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.card-back>span
+{
+    font-size: 0.5em;
+}
